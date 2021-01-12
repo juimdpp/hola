@@ -1,0 +1,11 @@
+export const SIGN_UP = 'SIGN_UP';
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT'
+export const GET_CURRENT_USER = 'GET_CURRENT_USER'
+
+export const REQUEST_MATCHING = 'REQUEST_MATCHING'
+export const GET_REQUEST = 'GET_REQUEST'
+export const DELETE_REQUEST = 'DELETE_REQUEST'
+export const GET_SINGLE_MATCHING = 'GET_SINGLE_MATCHING'
+
+export const GET_ALL_NOTICES = 'GET_ALL_NOTICES'

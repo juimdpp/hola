@@ -1,0 +1,54 @@
+div .SignupBackground {
+    height: 100%;
+    background-color: #f2eded;
+}
+
+div .Signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-break: normal;
+}
+
+div .Signup p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: gray;
+    border: none;
+    color: white;
+    width: 310px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div .Signup label {
+    text-align: left;
+    font-weight: 500;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+div .Signup input {
+    color: gray;
+    width: 300px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div .Signup  button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 125px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

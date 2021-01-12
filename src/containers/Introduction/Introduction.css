@@ -1,0 +1,19 @@
+div .Introduction p{
+  object-fit: contain;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: start;
+  line-height: 1.7;
+  letter-spacing: normal;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+div #subtext {
+  color: #707070;
+  font-size: 80%;
+  margin-left: 7%;
+}

@@ -1,0 +1,28 @@
+div .notice{
+  border-bottom: 1px solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+div #body {
+  height: 10%;
+    object-fit: contain;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 90%;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: start;
+    line-height: 1.2;
+    letter-spacing: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div #title {
+  font-family: "Nanum Gothic", sans-serif;
+    font-size: 100%;
+    color: grey;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+}

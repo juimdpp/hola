@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '^*4#3xm9hd6)bw@ik-g@koz*p66ludm6z&@8+!*_!1znqta6i&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -126,6 +128,10 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static/' # at deploy it should be home/hola/hola/backend/static something like this
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+

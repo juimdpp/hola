@@ -41,6 +41,7 @@ ALLOWED_HOSTS = ['https://vess-hola.herokuapp.com',
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',  # < As per whitenoise documentation
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,7 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hola.apps.HolaConfig',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
+    'rest_framework',
 ]
 
 CKEDITOR_UPLOAD_PATH = "uploads/"

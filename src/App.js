@@ -15,7 +15,10 @@ import Mypage from './containers/Profile/Mypage';
 import MatchingList from './containers/Profile/MatchingList';
 import './App.scss';
 import PDFExample from './containers/pdfUpload';
+import axios from 'axios';
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 // TODO: handle logout button
 function App(props) {
   return(

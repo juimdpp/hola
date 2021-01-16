@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'hola.apps.HolaConfig',
     'ckeditor',
     'ckeditor_uploader',
-    'rest_framework',
 ]
 
 CKEDITOR_UPLOAD_PATH = "uploads/"

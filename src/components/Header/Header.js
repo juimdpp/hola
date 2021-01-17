@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { requirePropFactory } from '@material-ui/core';
 import * as actionCreators from '../../store/actions/index'
+import logo from './logo.png';
 
 class Header extends Component{
 	state = {
@@ -44,10 +45,10 @@ class Header extends Component{
 	render(){
 		// console.log("slkdj")
 		return (
-
+//src={'data:image/png;base64,'+require('./logo.png')}
 			<div id="header">
 				<div id="logo" className="grid-item">
-					<img id="hola-logo" src={'data:image/png;base64,'+require('./logo.png')} alt="HOLA logo" onClick={() => this.props.history.push('/main-page')} />
+					<img id="hola-logo" src={logo} alt="HOLA logo" onClick={() => this.props.history.push('/main-page')} />
 				</div>
 				<div id="navigation" className="grid-item">
 					<button id="introduction-tap" type="button" onClick={() => this.props.history.push('/introduction')}>

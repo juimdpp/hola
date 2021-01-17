@@ -30,7 +30,9 @@ class Matching extends Component{
         })
     }
     onClickMatching = () => {
+        console.log(this.state)
         this.props.matchingRequest(this.state).then( res => {
+            console.log(res)
             if(!res){
                 alert("이미 매칭을 신청하였습니다. 한번 이상 신청은 불가합니다.")
             }

@@ -25,9 +25,11 @@ def requestMatching(request):
         except (KeyError, JSONDecodeError) as e:
             return HttpResponse(status = 400)
         profile = Profile.objects.get(user=user)
+        print(profile)
         req = Request.objects.create(requestedTime=time, requestedLevel=level, user=profile, createdDate=datetime.datetime.now().strftime ("%Y-%m-%d"))
-        print(model_to_dict(req))
+        # print(model_to_dict(req))
         response = model_to_dict(req)
+        # print(response)
         return JsonResponse(response, status=200)
     elif request.method == 'GET':
         user = request.user;

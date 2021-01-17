@@ -11,7 +11,7 @@ class Notice(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    # moviePreference = models.TextField()
+    moviePreference = models.TextField(null=True)
     # requests = models.ManyToManyField(Request, on_delete=models.CASCADE)
     # should add more fields or even a foreign key to another model
 

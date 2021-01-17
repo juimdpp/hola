@@ -25,7 +25,7 @@ class Login extends Component{
         this.setState({logged_in: true})
         this.props.onLogin(userCredentials)
         window.localStorage.setItem('currentUser', JSON.stringify(userCredentials))
-        this.props.history.push('/main-page/')
+        this.props.history.push('/main-page')
     }
     render(){
         return(

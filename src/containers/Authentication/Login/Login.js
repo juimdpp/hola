@@ -23,7 +23,7 @@ class Login extends Component{
         this.props.onLogin(userCredentials).then(res => {
             if(res){
                 alert('Welcome!')
-                this.props.history.push('/main-page/')
+                this.props.history.push('/main-page')
                 window.location.reload()
             }
             else{

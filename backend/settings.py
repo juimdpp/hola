@@ -31,8 +31,8 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = '^*4#3xm9hd6)bw@ik-g@koz*p66ludm6z&@8+!*_!1znqta6i&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS = ['https://vess-hola.herokuapp.com',
 'localhost',

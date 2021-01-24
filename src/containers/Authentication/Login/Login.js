@@ -24,7 +24,7 @@ class Login extends Component{
             if(res){
                 alert('Welcome!')
                 this.props.history.push('/main-page')
-                // window.location.reload()
+                window.location.reload()
             }
             else{
                 alert('Username or Password incorrect')

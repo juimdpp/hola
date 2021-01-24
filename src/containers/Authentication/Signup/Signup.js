@@ -29,7 +29,8 @@ class Signup extends Component{
                 window.alert('Username already in use. Please choose another one.')
             }
             else if (res){
-                this.props.history.push('/main-page')
+                window.alert('Signup successful! Please login.')
+                this.props.history.push('/login')
             }
         })
         

@@ -24,8 +24,11 @@ def requestMatching(request):
             time = req_data['time']
         except (KeyError, JSONDecodeError) as e:
             return HttpResponse(status = 400)
+        print("before")
         profile = Profile.objects.get(user=user)
+        print("after")
         print(profile)
+        print("Hello")
         req = Request.objects.create(requestedTime=time, requestedLevel=level, user=profile, createdDate=datetime.datetime.now().strftime ("%Y-%m-%d"))
         # print(model_to_dict(req))
         response = model_to_dict(req)

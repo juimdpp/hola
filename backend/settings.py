@@ -87,8 +87,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 
-# # Database
-# # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+# Database
+# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 # DATABASES = {
 #     'default': {
@@ -96,9 +96,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# DATABASES = {}
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
+
+
+## Used for deploy ##
 DATABASES = {
 'default': {
     'ENGINE': 'django.db.backends.postgresql',
@@ -109,7 +110,7 @@ DATABASES = {
     'PORT': '5432',
 }
 }
-
+## Used fro deploy ##
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

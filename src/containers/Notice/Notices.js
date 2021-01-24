@@ -21,9 +21,7 @@ class Notices extends Component{
 		))		
 		return (	
 			<div className="notices">
-				<button id="notice-tap" type="button" onClick={() => {this.props.history.push('/pdf/')
-								window.location.reload()}}>매뉴얼
-				</button><br/>
+				
 				<h3>공지사항</h3>
 				{notice}
 				<br/>

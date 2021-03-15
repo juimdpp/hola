@@ -31,8 +31,8 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = '^*4#3xm9hd6)bw@ik-g@koz*p66ludm6z&@8+!*_!1znqta6i&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://vess-hola.herokuapp.com',
 'localhost',
@@ -90,26 +90,26 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 
 ## Used for deploy ##
-DATABASES = {
-'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'devu63ijt5t902',
-    'USER': 'tggircnsfuttff',
-    'PASSWORD': '999fb3656588664c0bcd206d051047629c5a4c2cfd8ee6fc0f704c4165c6301f',
-    'HOST': 'ec2-52-71-107-99.compute-1.amazonaws.com',
-    'PORT': '5432',
-}
-}
+# DATABASES = {
+# 'default': {
+#     'ENGINE': 'django.db.backends.postgresql',
+#     'NAME': 'devu63ijt5t902',
+#     'USER': 'tggircnsfuttff',
+#     'PASSWORD': '999fb3656588664c0bcd206d051047629c5a4c2cfd8ee6fc0f704c4165c6301f',
+#     'HOST': 'ec2-52-71-107-99.compute-1.amazonaws.com',
+#     'PORT': '5432',
+# }
+# }
 ## Used fro deploy ##
 
 # Password validation
